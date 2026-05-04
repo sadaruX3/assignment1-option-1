@@ -85,13 +85,11 @@ def main():
     input_file = Path(args.excel)
     output_file = input_file
 
-    print(f"📂 Excel file : {input_file}")
-    print(f"🌐 URL        : {args.url}")
-    print(f"⏱  Wait ms    : {args.wait_ms}")
-    print(f"⌨️  Type delay : {args.type_delay_ms}ms")
-    print(f"🐢 Slow-mo    : {args.slow_mo_ms}ms")
-    print(f"💾 Save every : {args.save_every} row(s)")
-    print(f"🔢 Max rows   : {args.max_rows}")
+    print(f" Excel file : {input_file}")
+    print(f" URL        : {args.url}")
+    print(f"  Wait ms    : {args.wait_ms}")
+    print(f" Type delay : {args.type_delay_ms}ms")
+    print(f" Slow-mo    : {args.slow_mo_ms}ms")
     print()
 
     wb = openpyxl.load_workbook(input_file)
@@ -183,10 +181,10 @@ def main():
         print("=" * 60)
         print(f"✅ PASS  : {pass_count}")
         print(f"❌ FAIL  : {fail_count}")
-        print(f"⚠️  ERRORS: {error_count}")
-        print(f"📊 TOTAL : {pass_count + fail_count}")
+        print(f"ERRORS: {error_count}")
+        print(f"TOTAL : {pass_count + fail_count}")
         print("=" * 60)
-        print(f"💾 Results saved to: {output_file}")
+        print(f"Results saved to: {output_file}")
 
         if args.keep_open:
             print("🔓 Browser kept open. Close it manually when done.")
@@ -194,7 +192,7 @@ def main():
 
         browser.close()
 
-    print("✅ DONE")
+    print("DONE")
 
 
 if __name__ == "__main__":
