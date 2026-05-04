@@ -23,7 +23,7 @@ playwright install
 1. Open Command Prompt
 2. Navigate to the project folder:
 ```bash
-cd /d D:\test_automation
+cd /d D:\3rd 1st\ITPM\IT23643536-Assignment 1-Option 1
 ```
 3. Run the automation script:
 ```bash
